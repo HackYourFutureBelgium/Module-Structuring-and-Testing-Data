@@ -3,6 +3,8 @@ function capitalise(str) {
   str = `${str[0].toUpperCase()}${str.slice(1)}`;
   return str;
 }
-console.log("Ok");
+//console.log("Ok");
+
+module.exports =capitalise ;
 
 

@@ -6,5 +6,6 @@ function convertToPercentage(decimalNumber) {
   return percentage;
 }
 
-console.log(convertToPercentage(0.5));
+module.exports = convertToPercentage;
+//console.log(convertToPercentage(0.5));
 
