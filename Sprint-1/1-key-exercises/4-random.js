@@ -1,9 +1,12 @@
-const minimum = 1;
-const maximum = 100;
+const minimum = 100;
+const maximum = 101;
 
-const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+random = Math.random();
 
+const num = Math.floor(random * (maximum - minimum + 1)) + minimum;
+console.log(random);
 // In this exercise, you will need to work out what num represents?
 // Try breaking down the expression and using documentation to explain what it means
 // It will help to think about the order in which expressions are evaluated
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
+console.log(num);
