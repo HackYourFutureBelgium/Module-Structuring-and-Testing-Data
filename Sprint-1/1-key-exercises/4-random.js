@@ -2,6 +2,16 @@ const minimum = 1;
 const maximum = 100;
 
 const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+console.log(num);
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+num = getRandomInt(minimum, maximum);
+console.log(num);
+const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 
 // In this exercise, you will need to work out what num represents?
 // Try breaking down the expression and using documentation to explain what it means
