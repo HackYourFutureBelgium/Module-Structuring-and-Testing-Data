@@ -3,9 +3,9 @@
 // Predict the output of the following code:
 // =============> Write your prediction here
 
-const num = 103;
+// const num = 103;
 
-function getLastDigit() {
+function getLastDigit(num) {
   return num.toString().slice(-1);
 }
 
