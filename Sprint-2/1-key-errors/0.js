@@ -5,9 +5,10 @@
 // interpret the error message and figure out why an error is occurring
 
 function capitalise(str) {
-  let str = `${str[0].toUpperCase()}${str.slice(1)}`;
-  return str;
+  let str1 = `${str[0].toUpperCase()}${str.slice(1)}`;
+  return str1;
 }
+console.log(capitalise("nikita"));
 
 // =============> write your explanation here
 // =============> write your new code here
