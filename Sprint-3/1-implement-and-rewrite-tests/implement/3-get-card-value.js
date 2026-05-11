@@ -16,7 +16,7 @@ function getCardValue(card) {
     return 11;
   } else if (numberCards.includes(rank)) return Number(rank);
   else if (otherCards.includes(rank)) return 10;
-  else return "Invalid Card";
+  else throw new Error("Invalid Card");
 }
 
 // The line below allows us to load the getCardValue function into tests in other files.
@@ -70,5 +70,9 @@ assertEquals(faceCards[3], 10);
 // Given a card with an invalid rank (neither a number nor a recognized face card),
 // When the function is called with such a card,
 // Then it should throw an error indicating "Invalid card rank."
-const invalidCard = getCardValue("B♠");
-assertEquals(invalidCard, "Invalid Card");
+try {
+  getCardValue("B♠");
+  console.assert(false, "Expected an error for invalid card");
+} catch (error) {
+  assertEquals(error.message, "Invalid Card");
+}
