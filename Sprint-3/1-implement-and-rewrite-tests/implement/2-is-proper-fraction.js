@@ -15,6 +15,8 @@ function isProperFraction(numerator, denominator) {
   } else if (numerator < 0 && Math.abs(numerator) < denominator) {
     return true;
   }
+  //The above condition checks if the numerator is negative and its absolute value is less than the denominator,
+  //  which would indicate that it is a proper fraction.
 }
 
 // The line below allows us to load the isProperFraction function into tests in other files.
