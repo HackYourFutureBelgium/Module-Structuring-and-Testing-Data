@@ -8,12 +8,10 @@
 // write one test at a time, and make it pass, build your solution up methodically
 
 function isProperFraction(numerator, denominator) {
-  if (numerator < denominator) {
+  if (Math.abs(numerator) < Math.abs(denominator)) {
     return true;
-  } else if (numerator >= denominator) {
+  } else if (Math.abs(numerator) >= Math.abs(denominator)) {
     return false;
-  } else if (numerator < 0 && Math.abs(numerator) < denominator) {
-    return true;
   }
   //The above condition checks if the numerator is negative and its absolute value is less than the denominator,
   //  which would indicate that it is a proper fraction.
